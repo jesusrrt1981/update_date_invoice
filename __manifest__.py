@@ -5,7 +5,7 @@
     "author": "Jesus rodriguez",
     "website": " ",
     "depends": [
-        "base","account","account_accountant",
+        "base","account","sale",
     ],
     "data": [
         # security

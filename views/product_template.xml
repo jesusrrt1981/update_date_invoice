@@ -2,12 +2,23 @@
     <record id="action_update_auxiliar" model="ir.actions.server">
         <field name="name">Actualizar registros</field>
         <field name="type">ir.actions.server</field>
-        <field name="model_id" ref="model_account_invoice"/>
-        <field name="binding_model_id" ref="model_account_invoice" />
+        <field name="model_id" ref="model_sale_order"/>
+        <field name="binding_model_id" ref="model_sale_order" />
         <field name="sequence">1</field>
         <field name="state">code</field>
         <field name="code">
             action = records.update_date()
+        </field> 
+    </record>
+    <record id="action_update_auxiliar1" model="ir.actions.server">
+        <field name="name">Actualizar registros1</field>
+        <field name="type">ir.actions.server</field>
+        <field name="model_id" ref="model_sale_order"/>
+        <field name="binding_model_id" ref="model_sale_order" />
+        <field name="sequence">1</field>
+        <field name="state">code</field>
+        <field name="code">
+            action = records.check()
         </field> 
     </record>
 
